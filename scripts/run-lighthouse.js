@@ -3,7 +3,7 @@ const chromeLauncher = require('chrome-launcher');
 const fs = require('fs');
 const path = require('path');
 
-const url = 'https://example.com';
+const url = 'https://horitaku1124.github.io/';
 
 (async () => {
   const chrome = await chromeLauncher.launch({ chromeFlags: ['--headless'] });
