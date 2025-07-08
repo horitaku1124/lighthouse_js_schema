@@ -26,7 +26,7 @@ jobs:
         run: node scripts/run-lighthouse.js
 
       - name: Upload report artifacts
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: lighthouse-report
           path: report/
