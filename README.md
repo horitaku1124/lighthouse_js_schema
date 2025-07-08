@@ -1,0 +1,1 @@
+# lighthouse_js_schema
