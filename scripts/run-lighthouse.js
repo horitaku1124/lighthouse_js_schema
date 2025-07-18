@@ -6,7 +6,12 @@ const path = require('path');
 const url = 'https://horitaku1124.github.io/';
 
 (async () => {
-  const chrome = await chromeLauncher.launch({ chromeFlags: ['--headless'] });
+  const chrome = await chromeLauncher.launch({ chromeFlags: [
+    '--headless',
+    '--no-sandbox',
+    '--disable-gpu',
+    '--disable-dev-shm-usage'
+  ]});
   const options = { port: chrome.port, output: ['html', 'json'] };
   const runnerResult = await lighthouse(url, options);
 
